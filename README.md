@@ -1,4 +1,4 @@
-# Large mammal extinction filters in the San Francisco Bay Area of California
+# Large mammal extinction filters in the San Francisco Bay Area, CA
 
 ## Objective: 
 Build a database with research-informed indices describing known and unknown fitness-related threats to large mammal populations in the San Francisco Bay Area of California, USA. Project this database on an interactive map for users to visualize major threats to species in the region and to toggle between individual species and different types of natural and anthropogenic threats. This tool will be made to engage local lay persons, policy makers, and researchers about known population-level threats, as well as knowledge gaps, to prioritize relative threats from local to global scales. 
