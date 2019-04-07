@@ -5,3 +5,39 @@ date: "4/7/2019"
 output: github_document
 ---
 
+```{r, echo=FALSE}
+library(tidyverse)
+```
+
+### Step 1: 
+* Import table of mammals in the bay area (only including native species). (Source: *<http://www.sfbaywildlife.info/species/mammals.htm>*) 
+* Add life history traits to bay area mammals dataframe. (Source: *<http://esapubs.org/archive/ecol/E090/184/>* Date extracted: 4/7/2019)
+
+```{r}
+# import .csv
+sf_mammals <- read.csv()
+head(sf_mammals)
+
+# import life history traits from PanTHERIA
+pantheria <- read.csv()
+head(pantheria)
+
+# join life history traits to Bay Area mammal dataframe
+sf_traits <- left_join(sf_mammals, pantheria) %>% 
+  arrange(desc(bodysize))
+head(sf_traits)
+
+# filter dataframe to be mammals with body size >3kg
+sf_lg_mammals <- sf_traits %>% 
+  filter(bodysize > 3)
+
+length(sf_lg_mammals)
+```
+
+### Step 2: 
+* Add distribution and abundance maps for each species. (Source: *<>*)
+
+```{r}
+
+```
+
