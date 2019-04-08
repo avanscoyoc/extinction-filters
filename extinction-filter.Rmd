@@ -15,22 +15,23 @@ library(tidyverse)
 
 ```{r}
 # import .csv
-sf_mammals <- read.csv()
+sf_mammals <- read.csv("data/sf_mammals.csv", stringsAsFactors = FALSE) %>% 
+  mutate(ID = gsub(" ", "", str_trim(scientific_name)))
 head(sf_mammals)
 
 # import life history traits from PanTHERIA
-pantheria <- read.csv()
-head(pantheria)
+pantheria <- read.table("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR05_Aug2008.txt", sep = "\t", stringsAsFactors = FALSE, header = TRUE, na.strings = c("NA", "-999", "-999.00")) %>% 
+  mutate(ID = gsub(" ", "", str_trim(MSW05_Binomial)))
+names(pantheria)[7] <- "bodysize"
 
 # join life history traits to Bay Area mammal dataframe
-sf_traits <- left_join(sf_mammals, pantheria) %>% 
+sf_traits <- left_join(sf_mammals, pantheria, by="ID") %>%  
   arrange(desc(bodysize))
-head(sf_traits)
+head(sf_traits)  # (porcupine, sperm whale and bottlenose dolphin didn't merge)
 
 # filter dataframe to be mammals with body size >3kg
-sf_lg_mammals <- sf_traits %>% 
-  filter(bodysize > 3)
-
+sf_lg_mammals <- sf_traits %>%
+  filter(bodysize > 2000)
 length(sf_lg_mammals)
 ```
 

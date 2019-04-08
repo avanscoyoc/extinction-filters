@@ -1,106 +1,1 @@
-﻿common_name,scientific_name
-Virginia Opossum , Didelphis virginiana
-Ornate Shrew , Sorex ornatus
-Vagrant Shrew , Sorex vagrans
-Fog Shrew , Sorex sonomae
-Trowbridge's Shrew , Sorex trowbridgii
-American Shrew mole , Neurotrichus gibbsii
-Broad footed Mole , Scapanus latimanus
-Desert Cottontail , Sylvilagus audubonii
-Brush Rabbit , Sylvilagus bachmani
-Black tailed Jackrabbit , Lepus californicus  
-Mountain Beaver , Aplodontia rufa  
-California Ground Squirrel , Spermophilus beecheyi
-Sonoma Chipmunk , Neotamias sonomae
-Merriam's Chipmunk , Neotamias merriami
-Yellow cheeked Chipmunk , Neotamias ochrogenys 
-Western Gray Squirrel , Sciurus griseus
-Douglas Squirrel , Tamiasciurus douglasii 
-Botta's Pocket Gopher , Thomomys bottae
-California Pocket Mouse , Chaetodipus californicus
-Deer Mouse , Peromyscus maniculatus
-California Mouse , Peromyscus californicus
-Brush Mouse , Peromyscus boylii
-Pinyon Mouse , Peromyscus truei
-Salt Marsh Harvest Mouse , Reithrodontomys raviventris
-Western Harvest Mouse , Reithrodontomys megalotis
-Dusky footed Woodrat , Neotoma fuscipes  
-Desert Woodrat , Neotoma lepida
-California Vole , Microtus californicus
-Common Muskrat , Ondatra zibethicus
-Norway Rat , Rattus norvegicus
-Black Rat , Rattus rattus
-House Mouse , Mus musculus
-Pacific Jumping Mouse , Zapus trinotatus
-Heermann's Kangaroo Rat , Dipodomys heermanni  
-American Beaver , Castor canadensis  
-North American Porcupine , Erithizon dorsatum 
-Coyote , Canis latrans
-Gray Fox , Urocyon cinereoargenteus  
-Kit Fox , Vulpes macrotis
-Ringtail , Bassariscus astutus 
-Northern Raccoon , Procyon lotor
-Short tailed Weasel , Mustela erminea
-Long tailed Weasel , Mustela frenata  
-American Mink , Neovison vison
-American Badger , Taxidea taxus  
-Western Spotted Skunk , Spilogale gracilis 
-Striped Skunk , Mephitis mephitis
-North American River Otter , Lontra canadensis
-American Black Bear , Ursus americanus 
-"Puma (Cougar, Mountain Lion) ", Puma concolor  
-Bobcat , Lynx rufus
-Tule Elk , Cervus elaphus
-Mule Deer , Odocoileus hemionus
-Little Brown Myotis , Myotis lucifugus
-Yuma Myotis , Myotis yumanensis
-Long eared Myotis , Myotis evotis
-Fringed Myotis , Myotis thysanodes
-Long legged Myotis , Myotis volans
-California Myotis , Myotis californicus
-Western Small footed Myotis , Myotis ciliolabrum
-Silver haired Bat , Lasionycteris noctivagans
-Big Brown Bat , Eptesicus fuscus
-Western Mastiff Bat , Eumops perotis
-Western Red Bat , Lasiurus blossevillii
-Hoary Bat , Lasiurus cinereus
-Townsend's Big eared Bat , Corynorhinus townsendii
-Pallid Bat , Antrozous pallidus
-Brazilian (Mexican) Free tailed Bat, Tadarida brasiliensis
-Western Pipistrelle (Canyon Bat) , Parastrellus hesperus
-Gray Whale , Eschrichtius robustus
-Humpback Whale , Megaptera novaeangliae
-Blue Whale , Balaenoptera musculus
-Fin Whale , Balaenoptera physalus
-Sei Whale , Balaenoptera borealis
-Minke Whale , Balaenoptera acutorostrata
-North Pacific Right Whale , Eubalaena japonica
-Short finned Pilot Whale , Globicephala macrorhynchus
-Sperm Whale , Physeter macrocephalus
-Pygmy Sperm Whale , Kogia breviceps
-Dwarf Sperm Whale , Kogia sima
-Cuvier's Beaked Whale , Ziphius cavirostris
-Baird's Beaked Whale , Berardius bairdii
-Hubb's Beaked Whale , Mesoplodon carlhubbsi
-Blainville's Beaked Whale , Mesoplodon densirostris
-Stejneger's Beaked Whale , Mesoplodon stejnegeri
-Orca (Killer Whale) , Orcinus orca
-False Killer Whale , Pseudorca crassidens 
-Pacific White sided Dolphin , Lagenorhynchus obliquidens
-Dall's Porpoise , Phocoenoides dalli
-Northern Right Whale Dolphin , Lissodelphis borealis
-Short beaked Common Dolphin , Delphinus delphis
-Long beaked Common Dolphin , Delphinus capensis
-Bottlenose Dolphin , Tursiops truncates
-Striped Dolphin , Stenella coeruleoalba
-Spotted Dolphin , Mirounga angustirostris
-Rough toothed Dolphin , Steno bredanensis
-Risso's Dolphin , Grampus griseus
-Harbor Porpoise , Phocoena phocoena
-Northern Fur Seal , Callorhinus ursinus
-Guadalupe Fur Seal , Arctocephalus townsendi 
-Northern (Steller) Sea lion , Eumetopias jubatus
-California Sea lion , Zalophus californianus
-Northern Elephant Seal , Mirounga angustirostris
-Harbor Seal , Phoca vitulina
-Sea Otter , Enhydra lutris
+﻿scientific_name,common_nameDidelphis virginiana,Virginia Opossum Sorex ornatus,Ornate Shrew Sorex vagrans,Vagrant Shrew Sorex sonomae,Fog Shrew Sorex trowbridgii,Trowbridge's Shrew Neurotrichus gibbsii,American Shrew mole Scapanus latimanus,Broad footed Mole Sylvilagus audubonii,Desert Cottontail Sylvilagus bachmani,Brush Rabbit Lepus californicus  ,Black tailed Jackrabbit Aplodontia rufa  ,Mountain Beaver Spermophilus beecheyi,California Ground Squirrel Neotamias sonomae,Sonoma Chipmunk Neotamias merriami,Merriam's Chipmunk Neotamias ochrogenys,Yellow cheeked Chipmunk Sciurus griseus,Western Gray Squirrel Tamiasciurus douglasii,Douglas Squirrel Thomomys bottae,Botta's Pocket Gopher Chaetodipus californicus,California Pocket Mouse Peromyscus maniculatus,Deer Mouse Peromyscus californicus,California Mouse Peromyscus boylii,Brush Mouse Peromyscus truei,Pinyon Mouse Reithrodontomys raviventris,Salt Marsh Harvest Mouse Reithrodontomys megalotis,Western Harvest Mouse Neotoma fuscipes  ,Dusky footed Woodrat Neotoma lepida,Desert Woodrat Microtus californicus,California Vole Ondatra zibethicus,Common Muskrat Rattus norvegicus,Norway Rat Rattus rattus,Black Rat Mus musculus,House Mouse Zapus trinotatus,Pacific Jumping Mouse Dipodomys heermanni  ,Heermann's Kangaroo Rat Castor canadensis  ,American Beaver Erithizon dorsatum,North American Porcupine Canis latrans,Coyote Urocyon cinereoargenteus  ,Gray Fox Vulpes macrotis,Kit Fox Bassariscus astutus,Ringtail Procyon lotor,Northern Raccoon Mustela erminea,Short tailed Weasel Mustela frenata  ,Long tailed Weasel Neovison vison,American Mink Taxidea taxus  ,American Badger Spilogale gracilis,Western Spotted Skunk Mephitis mephitis,Striped Skunk Lontra canadensis,North American River Otter Ursus americanus,American Black Bear Puma concolor  ,"Puma (Cougar, Mountain Lion) "Lynx rufus,Bobcat Cervus elaphus,Tule Elk Odocoileus hemionus,Mule Deer Myotis lucifugus,Little Brown Myotis Myotis yumanensis,Yuma Myotis Myotis evotis,Long eared Myotis Myotis thysanodes,Fringed Myotis Myotis volans,Long legged Myotis Myotis californicus,California Myotis Myotis ciliolabrum,Western Small footed Myotis Lasionycteris noctivagans,Silver haired Bat Eptesicus fuscus,Big Brown Bat Eumops perotis,Western Mastiff Bat Lasiurus blossevillii,Western Red Bat Lasiurus cinereus,Hoary Bat Corynorhinus townsendii,Townsend's Big eared Bat Antrozous pallidus,Pallid Bat Tadarida brasiliensis,Brazilian (Mexican) Free tailed BatParastrellus hesperus,Western Pipistrelle (Canyon Bat) Eschrichtius robustus,Gray Whale Megaptera novaeangliae,Humpback Whale Balaenoptera musculus,Blue Whale Balaenoptera physalus,Fin Whale Balaenoptera borealis,Sei Whale Balaenoptera acutorostrata,Minke Whale Eubalaena japonica,North Pacific Right Whale Globicephala macrorhynchus,Short finned Pilot Whale Physeter macrocephalus,Sperm Whale Kogia breviceps,Pygmy Sperm Whale Kogia sima,Dwarf Sperm Whale Ziphius cavirostris,Cuvier's Beaked Whale Berardius bairdii,Baird's Beaked Whale Mesoplodon carlhubbsi,Hubb's Beaked Whale Mesoplodon densirostris,Blainville's Beaked Whale Mesoplodon stejnegeri,Stejneger's Beaked Whale Orcinus orca,Orca (Killer Whale) Pseudorca crassidens,False Killer Whale Lagenorhynchus obliquidens,Pacific White sided Dolphin Phocoenoides dalli,Dall's Porpoise Lissodelphis borealis,Northern Right Whale Dolphin Delphinus delphis,Short beaked Common Dolphin Delphinus capensis,Long beaked Common Dolphin Tursiops truncates,Bottlenose Dolphin Stenella coeruleoalba,Striped Dolphin Mirounga angustirostris,Spotted Dolphin Steno bredanensis,Rough toothed Dolphin Grampus griseus,Risso's Dolphin Phocoena phocoena,Harbor Porpoise Callorhinus ursinus,Northern Fur Seal Arctocephalus townsendi,Guadalupe Fur Seal Eumetopias jubatus,Northern (Steller) Sea lion Zalophus californianus,California Sea lion Mirounga angustirostris,Northern Elephant Seal Phoca vitulina,Harbor Seal Enhydra lutris,Sea Otter 
