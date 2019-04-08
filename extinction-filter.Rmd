@@ -5,7 +5,7 @@ date: "4/7/2019"
 output: github_document
 ---
 
-```{r, echo=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(tidyverse)
 ```
 
@@ -26,8 +26,7 @@ names(pantheria)[7] <- "bodysize"
 
 # join life history traits to Bay Area mammal dataframe
 sf_traits <- left_join(sf_mammals, pantheria, by="ID") %>%  
-  arrange(desc(bodysize))
-head(sf_traits)  # (porcupine, sperm whale and bottlenose dolphin didn't merge)
+  arrange(desc(bodysize)) # (porcupine, sperm whale and bottlenose dolphin didn't merge)
 
 # filter dataframe to be mammals with body size >3kg
 sf_lg_mammals <- sf_traits %>%
