@@ -52,4 +52,33 @@ length(sf_lg_mammals)
 
 ### Step 2:
 
--   Add distribution and abundance maps for each species. (Source: *&lt;&gt;*)
+-   Add distribution and abundance maps for each species. (Source: *<https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/species-data-web-services?qt-science_center_objects=0#qt-science_center_objects>*)
+
+``` r
+library(leaflet)
+library(rgdal)
+```
+
+``` r
+# read in range data from species folders
+range_ex <- readOGR(dsn="data/range_ex",layer="bCALTx_CONUS_Range_2001v1") %>% 
+  spTransform(CRS("+proj=longlat +datum=WGS84 +no_defs"))
+```
+
+    ## OGR data source with driver: ESRI Shapefile 
+    ## Source: "/Users/Amy/Documents/Berkeley Classes/Brashares Lab/projects/extinction-filters/data/range_ex", layer: "bCALTx_CONUS_Range_2001v1"
+    ## with 1 features
+    ## It has 2 fields
+
+``` r
+leaflet() %>% 
+  setView(lng = -122.2913, lat = 37.8272, zoom = 8) %>%
+  addTiles() %>% 
+  addPolygons(data = range_ex, 
+              weight = 0,
+              fillColor="red",
+              fillOpacity = 0.15,
+              label = "California Towhee (Pipilo crissalis)")
+```
+
+![](extinction-filter_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
