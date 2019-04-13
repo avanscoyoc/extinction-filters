@@ -23,6 +23,7 @@ head(sf_mammals)
 pantheria <- read.table("http://esapubs.org/archive/ecol/E090/184/PanTHERIA_1-0_WR05_Aug2008.txt", sep = "\t", stringsAsFactors = FALSE, header = TRUE, na.strings = c("NA", "-999", "-999.00")) %>% 
   mutate(ID = gsub(" ", "", str_trim(MSW05_Binomial)))
 names(pantheria)[7] <- "bodysize"
+names(pantheria)[3:4] <- c("genus","species")
 
 # join life history traits to Bay Area mammal dataframe
 sf_traits <- left_join(sf_mammals, pantheria, by="ID") %>%  
@@ -30,11 +31,74 @@ sf_traits <- left_join(sf_mammals, pantheria, by="ID") %>%
 
 # filter dataframe to be mammals with body size >3kg
 sf_lg_mammals <- sf_traits %>%
-  filter(bodysize > 2000)
+  filter(bodysize > 2000) %>% 
+  select(genus, species, common_name, bodysize)
 length(sf_lg_mammals)
 ```
 
-### Step 2: 
+Here I clean up the columns to work with the IUCN Redlist data
+```{r}
+
+```
+
+
+### Step 2:
+* Add species status from IUCN Redlist API *<http://apiv3.iucnredlist.org/>*
+
+```{r}
+library(httr)
+library(jsonlite)
+library(textclean)
+```
+
+```{r}
+# set url for api
+spp_ex <- GET("http://apiv3.iucnredlist.org/api/v3/species/narrative/vulpes%20vulpes?token=a96f3f11a1e606b9348e0f1a728820b69f1549fd614889f190646ff7296d571d") %>%
+  content("text") %>% 
+  replace_html() %>% 
+  fromJSON(simplifyVector = FALSE)
+spp_ex <- data.frame(spp_ex)
+length(spp_ex)
+```
+
+```{r}
+# create list of species info urls by region
+spp <- paste(sf_lg_mammals$genus,sf_lg_mammals$species, sep = "%20")
+spp_urls <- paste0("http://apiv3.iucnredlist.org/api/v3/species/narrative/",spp,"?token=")
+
+# function to get species info
+df <- data.frame()
+result <-list()
+fun <- function(q) {
+  x <- GET(q) %>% 
+  content("text") %>% 
+  replace_html() %>% 
+  fromJSON(simplifyVector = FALSE)
+  result <- data.frame(x)
+}
+
+iucn_dat <- map_df(spp_urls[1:3], fun) 
+colnames(iucn_dat) <- c("name", "id", "notes", "rationale", "range", "pop", "pop_trend", "habitat", "threat", "conservation", "use_trade")
+```
+
+
+
+```{r}
+# map function to dataframe
+# extinctall <- map_df(url, fun) %>% 
+#   mutate(date_extinct = stringr::str_extract(rationale, "\\d{4}")) %>% 
+#   select("Species ID" = species_id, date_extinct = date_extinct)
+# 
+# "/api/v3/species/:name/region/:region_identifier?token='YOUR TOKEN'" #individual species by region
+# "/api/v3/threats/species/:name/region/:region_identifier?token='YOUR TOKEN'" #individual species threats by region
+# "/api/v3/measures/species/name/:name/region/:region_identifier?token='YOUR TOKEN'" #individual species conservation action by region
+# "/api/v3/species/countries/name/:name/region/:region_identifier?token='YOUR TOKEN'" #individual species count by country 
+# "/api/v3/species/history/name/:name/region/:region_identifier?token='YOUR TOKEN'" #individual species listing history by region
+# "/api/v3/weblink/:name" #could be useful for learning more about the species
+```
+
+
+### Step 3: 
 * Add distribution and abundance maps for each species. (Source: *<https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/species-data-web-services?qt-science_center_objects=0#qt-science_center_objects>*)
 
 ```{r, warning=FALSE, message=FALSE}
